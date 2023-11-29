@@ -1,5 +1,10 @@
-import type { Metadata } from 'next'
-import './globals.css'
+import type { Metadata } from 'next';
+import '../sass/style.scss';
+import { Inter} from '@next/font/google';
+
+const inter = Inter({
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
   title: 'Brest Bar',
@@ -13,8 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <head></head>
-      <body>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }

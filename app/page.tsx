@@ -1,7 +1,7 @@
 import BarList from "@/components/BarsList";
-import Nav from "@/components/nav";
+import Nav from "@/components/Navbar/Navbar";
 
-export default function Page() {
+export default function App() {
  
 
   return (
