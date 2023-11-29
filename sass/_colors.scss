@@ -4,10 +4,14 @@ $c-SelectedGrey:#272727;
 $c-DarkPurple:#7D47AE;
 $c-Purple:#B36CF3;
 $c-LightPurple:#BF84F5;
-$c-LightBlue:#196C85;
+$c-Pink:#C110C7;
+$c-LightBlue:#55C8D4;
 $c-Red:#C43333;
 $c-Green: #27AE60 ;
 
 .c-GradientPink{
-    color:linear-gradient(180deg, rgba(198,14,148,1) 0%, rgba(181,107,247,1) 100%); ;
+    background: linear-gradient(90deg, rgba(193, 16, 199, 1) 0%, rgba(181, 107, 247, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }

@@ -1,0 +1,12 @@
+@use "../../../sass/colors" as *;
+
+.menuDesktop {
+  padding: 5rem 1rem 1rem 1rem;
+  width: 30vw;
+  height: 100vh;
+  background-color: $c-DarkestBlue;
+  h1 {
+    font-size: 2rem;
+    color: white;
+  }
+}

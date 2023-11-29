@@ -10,13 +10,13 @@ const Nav = () => {
       alt="bières qui s'entre choc  "
       src={cheers}
       style={{
-        maxWidth: '100%',
+        width: '20px',
         height: 'auto',
       }}/>
-      <h3>
+      <h3 className='c-GradientPink'>
         <span>
         Brest
-          </span>Brest bar
+          </span> bar
         </h3>
       </div>
       </nav>
