@@ -1,5 +1,6 @@
 import React from 'react'
 import './_menuDesktop.scss'
+import CategorySelector from '../CategoriesSelector/CategoriesSelector'
 
 export default function MenuDesktop({data}:any){
 
@@ -11,7 +12,7 @@ export default function MenuDesktop({data}:any){
 &nbsp; selon votre humeur.
     </span>
         </h1>
-
+        <CategorySelector/>
         </section>
     )
 }

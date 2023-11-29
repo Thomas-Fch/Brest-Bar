@@ -10,7 +10,7 @@ const Nav = () => {
       alt="bières qui s'entre choc  "
       src={cheers}
       style={{
-        width: '20px',
+        width: '28px',
         height: 'auto',
       }}/>
       <h3 className='c-GradientPink'>
