@@ -1,22 +1,16 @@
-// import { useState } from 'react';
+import { useContext } from 'react';
 import "./_barsList.scss";
 import Image from 'next/image';
 import Shoes from "../../assets/Shoes.svg"
 
-export default function BarsCardDesktop({bars}:any) {
+export default function BarsCardDesktop() {
 
-    // const [active, setActive] = useState(null);
+let {bars} = useContext(MyContext);
 
-    // const handleSelected = (index:any) => {
-    //   setActive((prevIndex) => {
-    //     const newIndex = prevIndex === index ? null : index;
-    //     return newIndex;
-    //   });
-    // };
-  console.log(bars, "data")
+  console.log(bars, "data");
   return (
     <>
-      {bars.map((data: any) => {
+      {bars && bars.length > 0 ?bars.map((data: any) => {
         const addressParts = data.address.split(',');
         const streetName = addressParts[0];
 
@@ -52,7 +46,7 @@ export default function BarsCardDesktop({bars}:any) {
             </div>
           </div>
         );
-      })}
+      }): <p>pas de données</p>}
     </>
   );
 }

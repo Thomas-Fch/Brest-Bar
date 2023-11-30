@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@next/font": "^14.0.3",
+    "mapbox-gl": "^3.0.0",
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-map-gl": "^7.1.6",
     "sass": "^1.69.5"
   },
   "devDependencies": {
