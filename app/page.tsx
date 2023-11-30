@@ -35,13 +35,11 @@ export default function App() {
   if (isLoading) return <p>Chargement...</p>
   if (!bars) return <p>Aucune données</p>
 
-  console.log(bars,"API");
 
   return (
     <main>
       <Nav />
-      <MenuDesktop  data={bars}/>
-      {/* <BarList/> */}
+      <MenuDesktop  bars={bars}/>
     </main>
   );
 }

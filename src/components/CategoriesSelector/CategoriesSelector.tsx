@@ -13,7 +13,6 @@ export default function CategoriesSelector({data}:any){
         <section className='CategoriesSelector'>
         <h3>Vous êtes plutôt ?</h3>
         <div className='CategoryWrapper'>
-
         <CategoryCard/>
         </div>
         </section>

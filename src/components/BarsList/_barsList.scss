@@ -1,0 +1,34 @@
+@use "../../../sass/colors" as *;
+
+.barList{
+display: flex;
+flex-direction: column;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+.barsCard{
+    padding: 0.5rem;
+background-color: $c-DarkGrey;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+.category{
+    color: #9747FF;
+
+}
+.nameTag{
+    display: flex;
+    flex-direction: row;
+}
+.posStreet{
+    color: #9747FF;
+    display: flex;
+    flex-direction: row;
+}
+}
+.titleButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

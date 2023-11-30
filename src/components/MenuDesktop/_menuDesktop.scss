@@ -3,7 +3,7 @@
 .menuDesktop {
   padding-top: 4rem;
   width: 30vw;
-  height: 100vh;
+  max-height: 100vh;
   background-color: $c-DarkestBlue;
   display: flex;
   flex-direction: column;

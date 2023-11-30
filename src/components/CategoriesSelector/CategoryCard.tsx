@@ -29,7 +29,7 @@ export default function CategoryCard() {
               height: 'auto',
               padding: '1.25rem',
               borderRadius: '10px',
-              backgroundColor: active === index ? '#C110C7' : '#2C2C2C',
+              backgroundColor: active === index ? '#272727' : '#2C2C2C',
             }}
           />
           <p style={{ color: active === index ? "#7D47AE" : "" }}>{data.name}</p>

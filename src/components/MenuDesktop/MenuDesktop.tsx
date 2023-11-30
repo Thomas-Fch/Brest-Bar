@@ -1,9 +1,9 @@
 import React from 'react'
 import './_menuDesktop.scss'
 import CategorySelector from '../CategoriesSelector/CategoriesSelector'
+import BarList from '../BarsList/BarsList'
 
-export default function MenuDesktop({data}:any){
-
+export default function MenuDesktop({bars}:any){
     return(
         <section className='menuDesktop'>
         <h1>
@@ -13,6 +13,7 @@ export default function MenuDesktop({data}:any){
     </span>
         </h1>
         <CategorySelector/>
+        <BarList bars={bars}/>
         </section>
     )
 }
