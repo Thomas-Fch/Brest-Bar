@@ -2,12 +2,14 @@ import { useContext } from 'react';
 import "./_barsList.scss";
 import Image from 'next/image';
 import Shoes from "../../assets/Shoes.svg"
+import MyContext from '../Context/Context';
 
 export default function BarsCardDesktop() {
 
-let {bars} = useContext(MyContext);
+let {bars, isLoading} = useContext(MyContext);
 
-  console.log(bars, "data");
+if (isLoading) return <p>Chargement...</p>;
+
   return (
     <>
       {bars && bars.length > 0 ?bars.map((data: any) => {
@@ -46,7 +48,7 @@ let {bars} = useContext(MyContext);
             </div>
           </div>
         );
-      }): <p>pas de données</p>}
+      }): {isLoading}}
     </>
   );
 }

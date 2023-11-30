@@ -12,6 +12,7 @@ async function getBars() {
 const ContextProvider = ({ children }) => {
   const [bars, setBars] = useState([]);
   const [isLoading, setLoading] = useState(true);
+  
 
   useEffect(() => {
     let isMounted = true;
@@ -36,7 +37,7 @@ const ContextProvider = ({ children }) => {
       isMounted = false;
     };
   }, []);
-  console.log(bars, "CONTEXTE3");
+
   return <MyContext.Provider value={{ bars, isLoading }}>{children}</MyContext.Provider>;
 };
 

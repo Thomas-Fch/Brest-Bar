@@ -3,7 +3,7 @@ import "./_menuDesktop.scss";
 import CategorySelector from "../CategoriesSelector/CategoriesSelector";
 import BarList from "../BarsList/BarsList";
 
-export default function MenuDesktop({ bars }: any) {
+export default function MenuDesktop() {
     
   return (
     <section className="menuDesktop">
@@ -12,7 +12,7 @@ export default function MenuDesktop({ bars }: any) {
         <span className="c-GradientPink">&nbsp; selon votre humeur.</span>
       </h1>
       <CategorySelector />
-      <BarList bars={bars} />
+      <BarList/>
     </section>
   );
 }
